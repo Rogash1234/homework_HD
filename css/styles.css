@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Alapbeállítások */
+body {
+    background-color: #D7B520; /* Háttérszín */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* A teljes képernyőmagasságot elfoglalja */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* Külső konténer beállítása */
+.container {
+    width: 80vw;
+    height: 100vh;
+    background-color: #D7B520; /* Az oldal háttérszínével megegyező */
+    border: none; /* Keret eltávolítása */
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "aside szekcio1"
+        "aside szekcio2"
+        "aside szekcio3"
+        "footer footer";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 1fr 1fr 1fr 10%;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+/* Fejléc */
+header {
+    grid-area: header;
+    background-color: #e7e6e6;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* 10% magasság */
+}
+
+/* Fejlécben lévő kép */
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* A kép teljesen kitölti a fejlécet */
+    object-position: center center; /* A kép közepét igazítja be, nem a tetejét */
+}
+
+/* Oldalsáv */
+/* Oldalsáv */
+aside {
+    grid-area: aside;
+    background: #5b9bd4; /* Kék */
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Menü */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* Szöveg és kép elrendezése a szekciókban */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+section img {
+    width: 450px; /* Háromszoros méret az eredetihez képest */
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+
+#szekcio1 { background-color: #f4cccc; } /* Barack */
+#szekcio2 { background-color: #fff1cc; } /* Sárga */
+#szekcio3 { background-color: #deebf7; } /* Halványkék */
+
+/* Lábléc */
+footer {
+    grid-area: footer;
+    background: #e7e6e6; /* Világosszürke */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Űrlap stílusok */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Jelölőnégyzetek és rádiógombok egy sorban a szöveggel */
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.checkbox-group div, .radio-group div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 0;
+    vertical-align: middle;
+}
+
+label {
+    width: auto;
+}

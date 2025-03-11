@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strandok</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header><img src="img/beach.jpg" alt="Strand kép"></header>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#szekcio1">Balaton</a></li>
+                    <li><a href="#szekcio2">Tisza-tó</a></li>
+                    <li><a href="#szekcio3">Szelidi-tó</a></li>
+                </ul>
+            </nav>
+        
+            <h2>Kapcsolat</h2>
+            <form>
+                <label for="nev">Név:</label>
+    <input type="text" id="nev" name="nev" required maxlength="50" placeholder="Írd be a nevedet">
+
+    <label for="email">E-mail cím:</label>
+    <input type="email" id="email" name="email" required maxlength="100" placeholder="Pl.: nev@email.com">
+
+    <label for="telefon">Telefonszám:</label>
+    <input type="tel" id="telefon" name="telefon" maxlength="15" placeholder="Pl.: +36 30 123 4567">
+        
+                <label for="to">Melyik tó érdekli?</label>
+                <select id="to" name="to">
+                    <option value="balaton">Balaton</option>
+                    <option value="tisza">Tisza-tó</option>
+                    <option value="szelidi">Szelidi-tó</option>
+                </select>
+        
+                <label>Milyen szállást keres?</label>
+                <input type="checkbox" id="szalloda" name="szallas" value="szalloda">
+                <label for="szalloda">Szálloda</label>
+        
+                <input type="checkbox" id="apartman" name="szallas" value="apartman">
+                <label for="apartman">Apartmanház</label>
+        
+                <input type="checkbox" id="kemping" name="szallas" value="kemping">
+                <label for="kemping">Kemping</label>
+        
+                <label>Milyen ellátás legyen?</label>
+                <input type="radio" id="teljes" name="ellatas" value="teljes">
+                <label for="teljes">Teljes panzió</label>
+        
+                <input type="radio" id="fel" name="ellatas" value="fel">
+                <label for="fel">Félpanzió</label>
+        
+                <input type="radio" id="reggeli" name="ellatas" value="reggeli">
+                <label for="reggeli">Csak reggeli</label>
+        
+                <input type="radio" id="nincs" name="ellatas" value="nincs">
+                <label for="nincs">Nem kérek ellátást</label>
+        
+                <label for="uzenet">Egyéb üzenet:</label>
+                <textarea id="uzenet" name="uzenet" rows="3"></textarea>
+        
+                <button type="submit">Mehet</button>
+            </form>
+        </aside>
+         
+        <section id="szekcio1">
+            <img src="img/balaton.jpg" alt="Balaton">
+            <p><strong>Balaton:</strong> A Balaton Magyarország legnagyobb tava, amelyet "magyar tengernek" is neveznek. 
+            Csodás strandokkal, borvidékekkel és természeti szépségekkel várja a látogatókat. 
+            A tó sekély, így gyorsan felmelegszik, és népszerű célpont családok számára is. 
+            Az északi part dombos, míg a déli part laposabb, homokos strandokkal.</p>
+        </section>
+        
+        <section id="szekcio2">
+            <img src="img/tisza-to.jpg" alt="Tisza-tó">
+            <p><strong>Tisza-tó:</strong> Magyarország második legnagyobb tava, amely mesterségesen jött létre. 
+            Gazdag élővilága miatt kedvelt hely a természetkedvelők körében. 
+            Lehetőség van csónakázásra, horgászatra és madármegfigyelésre is.</p>
+        </section>
+        
+        <section id="szekcio3">
+            <img src="img/szelidi-to.jpg" alt="Szelidi-tó">
+            <p><strong>Szelidi-tó:</strong> Egy kevésbé ismert, de csodás vízparti hely Magyarországon. 
+            Csendesebb, mint a Balaton vagy a Tisza-tó, de kiváló fürdőzésre és pihenésre. 
+            A környékén számos kirándulóhely található, és a tó vize kiválóan alkalmas úszásra.</p>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+</html>
